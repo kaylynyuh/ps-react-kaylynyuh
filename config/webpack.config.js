@@ -331,6 +331,8 @@ module.exports = function (webpackEnv) {
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         ...(modules.webpackAliases || {}),
+        // Use this webpack alias to avoid having to do icky imports like "../../../components/component"
+        'ps-react': path.resolve(__dirname, '../src/components')
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
