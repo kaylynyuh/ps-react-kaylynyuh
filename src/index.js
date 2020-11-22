@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Docs from './docs/Docs';
 import reportWebVitals from './reportWebVitals';
-import '../node_modules/highlight.js/styles/atom-one-dark.css';
+import '../node_modules/highlight.js/styles/agate.css';
 
 ReactDOM.render(
   <React.StrictMode>
